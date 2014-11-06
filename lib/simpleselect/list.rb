@@ -32,4 +32,22 @@ class List
         end 
         a
     end 
+    def headToTail()
+        val=[@head.value]
+        nodo=@head
+        while (nodo!=@tail)do
+            nodo=nodo.next
+            val.push(nodo)
+        end
+        val
+    end
+    def tailToHead()
+        val=[@tail.value]
+        nodo=@tail
+        while (nodo!=@head)do
+            nodo=nodo.prev
+            val.push(nodo)
+        end
+        val
+    end
 end

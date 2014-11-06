@@ -53,6 +53,12 @@ describe ListNode do
        it" El orden es el correcto"do
            @lista.pop.to_s.should eq("2.-) La siguiente definicion de un hash en Ruby es valida:\nhash_raro= {\n[1, 2, 3]=>Object.new(),\nHash.new => :toto\n}\n\na) Cierto\nb) Falso\n")
         end
+        it "para recorrer de la cabeza a la cola" do
+           @lista.headToTail[0].to_s.should eq("3.-) Cual es la salida del siguiente codigo Ruby?\nclass Array\ndef say_hi\n\"Hey!\"\nend\nend\np[1, \"bob\"].say_hi\n\na) 1\nb) bob\nc) Hey\nd) Ninguna de las anteriores\n")
+        end
+        it "para recorrer de la cabeza a la cola" do
+           @lista.tailToHead[0].to_s.should eq("4.-) Cual es el tipo del objeto en el siguiente codigo Ruby?\nclass Objeto\nend\n\na) Una instancia de la clase Class\nb) Una constante\nc) Un objeto\nd) Ninguna de las anteriores\n")
+        end
    end
    describe "Existe una pregunta Verdadero o falso" do
        it "Existe pregunta" do
