@@ -3,7 +3,7 @@ class ListNode
    def initialize(value)
       @value=value
       @next = nil
-      @prev =nil
+      @prev = nil
    end
 end
    
