@@ -4,14 +4,13 @@ class List
     def initialize(nodo)
         raise unless nodo.is_a? (ListNode)
         @head = nodo
+        @tail = nodo
     end
     def push (nodo)
         raise unless nodo.is_a? (ListNode)
-        aux = @head
-        while aux.next!=nil do
-            aux=aux.next
-        end
-        aux.next=nodo
+        nodo.prev=@tail
+        @tail.next=nodo
+        @tail=nodo
     end
     
     def multiple_push (nodos)
@@ -23,6 +22,7 @@ class List
     def pop 
         aux = @head.value
         @head = @head.next
+        @head.prev = nil
         aux
     end
     def vacia?
