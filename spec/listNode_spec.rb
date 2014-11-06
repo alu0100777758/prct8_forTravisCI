@@ -2,6 +2,7 @@ require "lib/simpleselect.rb"
 
 describe ListNode do
     before :all do
+        @var6 = TorFalse.new("6.-) Es apropiado que una clase tablero herede de una clase juego?")
         @var5 = SimpleSelect.new("5.-) Es apropiado que una clase Tablero herede de una clase Juego.",  ["a) Cierto", "b) Falso"])
         @var4 = SimpleSelect.new("4.-) Cual es el tipo del objeto en el siguiente codigo Ruby?\nclass Objeto\nend\n",  ["a) Una instancia de la clase Class", "b) Una constante","c) Un objeto","d) Ninguna de las anteriores"])
         @var3 = SimpleSelect.new("3.-) Cual es la salida del siguiente codigo Ruby?\nclass Array\ndef say_hi\n\"Hey!\"\nend\nend\np[1, \"bob\"].say_hi\n",  ["a) 1", "b) bob","c) Hey","d) Ninguna de las anteriores"])
@@ -52,6 +53,10 @@ describe ListNode do
        it" El orden es el correcto"do
            @lista.pop.to_s.should eq("2.-) La siguiente definicion de un hash en Ruby es valida:\nhash_raro= {\n[1, 2, 3]=>Object.new(),\nHash.new => :toto\n}\n\na) Cierto\nb) Falso\n")
         end
+   end
+   describe "Existe una pregunta Verdadero o falso" do
+       it "Existe pregunta" do
+       end
    end
 end
 
