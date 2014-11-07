@@ -1,4 +1,4 @@
-require "lib/simpleselect/simpleSelect.rb"
+require "simpleselect/simpleSelect.rb"
 
 class TorFalse < SimpleSelect
     def initialize (preg)

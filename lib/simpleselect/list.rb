@@ -1,4 +1,4 @@
-require "lib/simpleselect/listNode.rb"
+require "simpleselect/listNode.rb"
 
 class List
     def initialize(nodo)

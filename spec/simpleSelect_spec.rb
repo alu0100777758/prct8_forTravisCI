@@ -1,4 +1,4 @@
-require "lib/simpleselect.rb"
+require "simpleselect.rb"
 
 describe SimpleSelect do
     
