@@ -61,7 +61,8 @@ describe ListNode do
         end
    end
    describe "Existe una pregunta Verdadero o falso" do
-       it "Existe pregunta" do
+       it "Existe pregunta y respuestas son verdadero o falso" do
+           @var6.resp.should eq(["a) Verdadero", "b)falso"])
        end
    end
 end
