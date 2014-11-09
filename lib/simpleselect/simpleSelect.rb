@@ -14,7 +14,7 @@ class SimpleSelect < Pregunta
     end
     
     def to_s
-        aux = @preg + "\n"
+        aux = super.to_s
         
         for i in @resp
             aux = aux + i + "\n"
