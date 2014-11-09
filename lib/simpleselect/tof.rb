@@ -1,7 +1,13 @@
-require "simpleselect/simpleSelect.rb"
+require "simpleselect/pregunta.rb"
 
-class TorFalse < SimpleSelect
-    def initialize (preg)
-        super(preg, ["a) Verdadero", "b)falso"])
+class TorFalse < Pregunta
+    attr_reader :resp
+    def initialize (preg, dif)
+        super(preg, dif)
+        @resp = ["a) Verdadero", "b)falso"]
+    end
+    def to_s 
+        aux = super.to_s + "a) Verdadero\nb)falso\n"
+        aux
     end
 end

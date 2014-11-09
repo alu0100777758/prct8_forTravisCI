@@ -1,4 +1,5 @@
 require "simpleselect/version"
+require "simpleselect/pregunta"
 require "simpleselect/simpleSelect"
 require "simpleselect/listNode"
 require "simpleselect/list"

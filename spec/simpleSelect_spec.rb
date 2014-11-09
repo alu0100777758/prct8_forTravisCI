@@ -3,7 +3,7 @@ require "simpleselect.rb"
 describe SimpleSelect do
     
      before :all do
-        @var = SimpleSelect.new("Pregunta",  ["respuesta1", "respuesta2","respuesta3","respuesta4"])
+        @var = SimpleSelect.new("Pregunta",  ["respuesta1", "respuesta2","respuesta3","respuesta4"], 4)
         
     end
     describe "Ver existen preguntas y respuestas" do
@@ -26,6 +26,7 @@ describe SimpleSelect do
         end
         it"comprobar to_s" do
             @var.to_s.should eq("Pregunta\nrespuesta1\nrespuesta2\nrespuesta3\nrespuesta4\n")
+           
         end
     end
 

@@ -1,8 +1,11 @@
-class SimpleSelect 
-    attr_reader :preg, :resp
-   def initialize (pregunta, resp)
-        @preg, @resp = pregunta, resp
-    end
+require "simpleselect/pregunta.rb"
+
+class SimpleSelect < Pregunta
+    attr_reader :resp
+   def initialize (pregunta, resp, dif)
+       super(pregunta, dif)
+       @resp = resp
+   end
     def imprimir
         puts @preg
         for i in @resp
