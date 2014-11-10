@@ -89,7 +89,7 @@ describe ListNode do
    end
    describe"se comprueba que es enumerable" do
       it "Se puede hacer un each" do
-         @lista.each
+         @lista.each{1}
       end
    end
 end
