@@ -37,20 +37,20 @@ class List
     def headToTail()
         ###OJO FELIX jajjajajajja
        ## val=[@head.value] Antes estaba asi
-        val=[@head]
+        val=[@head.value]
         nodo=@head
         while (nodo!=@tail)do
             nodo=nodo.next
-            val.push(nodo)      ###Cuando recorres pusheas nodos, no valores, entonces no puede inicializar con un valor si luego pusheas nodos
+            val.push(nodo.value)      ###Cuando recorres pusheas nodos, no valores, entonces no puede inicializar con un valor si luego pusheas nodos
         end
         val
     end
     def tailToHead()
-        val=[@tail]
+        val=[@tail.value]
         nodo=@tail
         while (nodo!=@head)do
             nodo=nodo.prev
-            val.push(nodo)
+            val.push(nodo.value)
         end
         val
     end
