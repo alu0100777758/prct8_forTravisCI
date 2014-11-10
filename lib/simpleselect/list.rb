@@ -1,6 +1,8 @@
 require "simpleselect/listNode.rb"
 
 class List
+    include Enumerable
+    #DEFINIR each
     def initialize(nodo)
         raise unless nodo.is_a? (ListNode)
         @head = nodo
@@ -33,16 +35,18 @@ class List
         a
     end 
     def headToTail()
-        val=[@head.value]
+        ###OJO FELIX jajjajajajja
+       ## val=[@head.value] Antes estaba asi
+        val=[@head]
         nodo=@head
         while (nodo!=@tail)do
             nodo=nodo.next
-            val.push(nodo)
+            val.push(nodo)      ###Cuando recorres pusheas nodos, no valores, entonces no puede inicializar con un valor si luego pusheas nodos
         end
         val
     end
     def tailToHead()
-        val=[@tail.value]
+        val=[@tail]
         nodo=@tail
         while (nodo!=@head)do
             nodo=nodo.prev
