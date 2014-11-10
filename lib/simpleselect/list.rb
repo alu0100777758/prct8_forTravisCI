@@ -44,11 +44,11 @@ class List
         val
     end
     def tailToHead()
-        val=[@tail.value]
+        val=[@tail]
         nodo=@tail
         while (nodo!=@head)do
             nodo=nodo.prev
-            val.push(nodo.value)
+            val.push(nodo)
         end
         val
     end
@@ -56,7 +56,7 @@ class List
         nodo=@head
         while (nodo!=@tail)do
             nodo=nodo.next
-            yield 
+            yield nodo.value
         end
     end
 end
