@@ -94,7 +94,7 @@ describe ListNode do
       it "podemos obtener una cadena de la que extraer los datos" do
          cadena=""
          @lista.each{|i| cadena += i.to_s}
-         cadena.to_s.should eq("3.-) Cual es la salida del siguiente codigo Ruby?\nclass Array\ndef say_hi\n\"Hey!\"\nend\nend\np[1, \"bob\"].say_hi\n\na) 1\nb) bob\nc) Hey\nd) Ninguna de las anteriores\n")
+         cadena.to_s.should eq("3.-) Cual es la salida del siguiente codigo Ruby?\nclass Array\ndef say_hi\n\"Hey!\"\nend\nend\np[1, \"bob\"].say_hi\n\na) 1\nb) bob\nc) Hey\nd) Ninguna de las anteriores\n4.-) Cual es el tipo del objeto en el siguiente codigo Ruby?\nclass Objeto\nend\n\na) Una instancia de la clase Class\nb) Una constante\nc) Un objeto\nd) Ninguna de las anteriores\n")
       end
    end
 end
