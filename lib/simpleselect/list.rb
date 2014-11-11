@@ -53,12 +53,11 @@ class List
         val
     end
     def each 
-        val=[@tail]
         nodo=@head
         while (nodo!=@tail)do
+            yield nodo.value
             nodo=nodo.next
-            val.push(nodo)
         end
-        yield val
+        #yield val
     end
 end
